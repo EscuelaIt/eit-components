@@ -1,6 +1,6 @@
 {
   "name": "@escuelait/eit-logo-white",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "description": "Webcomponent eit-logo-white following open-wc recommendations",
   "author": "eit-logo-white",
   "license": "MIT",
@@ -10,7 +10,7 @@
     "start": "es-dev-server --app-index demo/index.html --preserve-symlinks --node-resolve --open --watch"
   },
   "dependencies": {
-    "@escuelait/eit-logo": "*",
+    "@escuelait/eit-logo": "^0.1.0",
     "lit-element": "^2.2.1",
     "lit-html": "^1.1.2"
   },
