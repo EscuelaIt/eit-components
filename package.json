@@ -1,6 +1,9 @@
 {
   "name": "@escuelait/eit-components",
   "private": true,
+  "scripts": {
+    "lerna": "lerna"
+  },
   "devDependencies": {
     "lerna": "^3.19.0"
   }
