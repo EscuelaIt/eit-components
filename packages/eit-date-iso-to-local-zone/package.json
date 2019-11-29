@@ -16,5 +16,8 @@
   },
   "devDependencies": {
     "es-dev-server": "^1.5.0"
+  },
+  "publishConfig": {
+    "access": "public"
   }
 }
