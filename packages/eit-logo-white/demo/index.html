@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+  <meta charset="utf-8">
+  <style>
+    body {
+      background: #303030;
+    }
+  </style>
+</head>
+<body>
+  <div id="demo"></div>
+
+  <script type="module">
+    import { html, render } from 'lit-html';
+    import '../eit-logo-white.js';
+
+    render(
+      html`
+        <eit-logo-white>
+        </eit-logo-white>
+      `,
+      document.querySelector('#demo')
+    );
+  </script>
+</body>
+</html>
