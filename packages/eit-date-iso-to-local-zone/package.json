@@ -1,6 +1,6 @@
 {
   "name": "@escuelait/eit-date-iso-to-local-zone",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "description": "Webcomponent eit-date-iso-to-local-zone following open-wc recommendations",
   "author": "eit-date-iso-to-local-zone",
   "license": "MIT",
