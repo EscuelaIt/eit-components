@@ -3,5 +3,10 @@
   "packages": [
     "packages/*"
   ],
-  "npmClient": "yarn"
+  "command": {
+    "bootstrap": {
+      "hoist": true
+    }
+  },
+  "npmClient": "npm"
 }

@@ -11,8 +11,8 @@
   },
   "dependencies": {
     "@escuelait/eit-logo": "*",
-    "lit-element": "^2.0.1",
-    "lit-html": "^1.0.0"
+    "lit-element": "^2.2.1",
+    "lit-html": "^1.1.2"
   },
   "devDependencies": {
     "es-dev-server": "^1.5.0"

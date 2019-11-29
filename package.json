@@ -2,7 +2,8 @@
   "name": "@escuelait/eit-components",
   "private": true,
   "scripts": {
-    "lerna": "lerna"
+    "lerna": "lerna",
+    "postinstall": "lerna bootstrap"
   },
   "devDependencies": {
     "lerna": "^3.19.0"
