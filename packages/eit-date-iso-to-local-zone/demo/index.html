@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+  <meta charset="utf-8">
+  <style>
+    body {
+      background: #fafafa;
+    }
+  </style>
+</head>
+<body>
+  <div id="demo"></div>
+
+  <script type="module">
+    import { html, render } from 'lit-html';
+    import '../eit-date-iso-to-local-zone.js';
+
+    render(
+      html`
+        <p>   
+          <eit-date-iso-to-local-zone iso="2019-12-05T17:00:00+00:00"></eit-date-iso-to-local-zone>
+        </p>
+        <p>   
+          <eit-date-iso-to-local-zone iso="2020-12-08T19:30:00+00:00" format="eeee 'a' 'las' kk:mm"></eit-date-iso-to-local-zone>
+        </p>
+      `,
+      document.querySelector('#demo')
+    );
+  </script>
+</body>
+</html>

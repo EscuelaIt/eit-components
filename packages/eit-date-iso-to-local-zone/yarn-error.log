@@ -1,0 +1,51 @@
+Arguments: 
+  C:\Program Files\nodejs\node.exe C:\Program Files (x86)\Yarn\bin\yarn.js install --mutex network:42424 --non-interactive
+
+PATH: 
+  C:\Users\Mateo\EscuelaIT\eit-components\packages\eit-date-iso-to-local-zone\node_modules\.bin;C:\Users\Mateo\EscuelaIT\eit-components\packages\node_modules\.bin;C:\Users\Mateo\EscuelaIT\eit-components\node_modules\.bin;C:\Users\Mateo\EscuelaIT\node_modules\.bin;C:\Users\Mateo\node_modules\.bin;C:\Users\node_modules\.bin;C:\node_modules\.bin;C:\Program Files\nodejs;C:\Users\Mateo\AppData\Local\Temp\yarn--1575049733517-0.7613894100388998;C:\Users\Mateo\EscuelaIT\eit-components\node_modules\.bin;C:\Users\Mateo\AppData\Local\Yarn\Data\link\node_modules\.bin;C:\Program Files\libexec\lib\node_modules\npm\bin\node-gyp-bin;C:\Program Files\lib\node_modules\npm\bin\node-gyp-bin;C:\Program Files\nodejs\node_modules\npm\bin\node-gyp-bin;C:\Users\Mateo\Downloads\cmder\bin;C:\Users\Mateo\Downloads\cmder\vendor\bin;C:\Users\Mateo\Downloads\cmder\vendor\conemu-maximus5\ConEmu\Scripts;C:\Users\Mateo\Downloads\cmder\vendor\conemu-maximus5;C:\Users\Mateo\Downloads\cmder\vendor\conemu-maximus5\ConEmu;C:\Python27\;C:\Python27\Scripts;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files (x86)\Yarn\bin\;C:\Users\Mateo\AppData\Roaming\nvm;C:\Program Files\nodejs;C:\ProgramData\chocolatey\bin;C:\Users\Mateo\AppData\Local\Microsoft\WindowsApps;C:\Users\Mateo\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\Mateo\AppData\Local\Yarn\bin;C:\Users\Mateo\AppData\Roaming\nvm;C:\Program Files\nodejs;C:\Users\Mateo\AppData\Roaming\npm;C:\Users\Mateo\Downloads\cmder\vendor\git-for-windows\cmd;C:\Users\Mateo\Downloads\cmder\vendor\git-for-windows\mingw64\bin;C:\Users\Mateo\Downloads\cmder\vendor\git-for-windows\usr\bin;C:\Users\Mateo\Downloads\cmder
+
+Yarn version: 
+  1.19.1
+
+Node version: 
+  12.13.1
+
+Platform: 
+  win32 x64
+
+Trace: 
+  Error: https://registry.yarnpkg.com/date-fns/-/date-fns-2.8.1.tgz: ESOCKETTIMEDOUT
+      at ClientRequest.<anonymous> (C:\Program Files (x86)\Yarn\lib\cli.js:141191:19)
+      at Object.onceWrapper (events.js:299:28)
+      at ClientRequest.emit (events.js:210:5)
+      at TLSSocket.emitRequestTimeout (_http_client.js:690:9)
+      at Object.onceWrapper (events.js:299:28)
+      at TLSSocket.emit (events.js:210:5)
+      at TLSSocket.Socket._onTimeout (net.js:469:8)
+      at listOnTimeout (internal/timers.js:531:17)
+      at processTimers (internal/timers.js:475:7)
+
+npm manifest: 
+  {
+  	"name": "@escuelait/eit-date-iso-to-local-zone",
+  	"version": "0.0.0",
+  	"description": "Webcomponent eit-date-iso-to-local-zone following open-wc recommendations",
+  	"author": "eit-date-iso-to-local-zone",
+  	"license": "MIT",
+  	"main": "index.js",
+  	"module": "index.js",
+  	"dependencies": {
+  		"date-fns": "^2.8.1",
+  		"lit-element": "^2.0.1",
+  		"lit-html": "^1.0.0"
+  	},
+  	"devDependencies": {
+  		"es-dev-server": "^1.5.0"
+  	}
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
