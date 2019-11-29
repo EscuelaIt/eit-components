@@ -1,5 +1,5 @@
 {
-  "name": "eit-logo",
+  "name": "@escuelait/eit-logo",
   "version": "0.0.0",
   "description": "Webcomponent eit-logo following open-wc recommendations",
   "author": "eit-logo",
@@ -7,7 +7,7 @@
   "main": "index.js",
   "module": "index.js",
   "scripts": {
-    "start": "es-dev-server --app-index demo/index.html --node-resolve --open --watch"
+    "start": "es-dev-server --app-index demo/index.html --preserve-symlinks --node-resolve --open --watch"
   },
   "dependencies": {
     "lit-html": "^1.0.0",
