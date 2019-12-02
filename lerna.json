@@ -6,6 +6,19 @@
   "command": {
     "bootstrap": {
       "hoist": true
+    },
+    "publish": {
+      "yes": true,
+      "message": "ci: nueva version",
+      "allowBranches": [
+        "master"
+      ],
+      "noCommitHooks": true,
+      "conventionalCommits": true,
+      "ignoreChanges": [
+        "*.spec.ts",
+        "*.md"
+      ]
     }
   },
   "npmClient": "npm"
