@@ -1,4 +1,4 @@
-name: EscuelaIT WebComponents
+name: EscuelaIT Publish
 
 on:
   push:
@@ -20,6 +20,8 @@ jobs:
           GIT_USERNAME: ${{ secrets.GIT_USERNAME }}
           GIT_EMAIL: ${{ secrets.GIT_EMAIL }}
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      - name: Preparar GIT
+        run: git checkout master
       - run: npm run lerna publish --registry https://registry.npmjs.org/:_authToken=${NODE_AUTH_TOKEN}
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
