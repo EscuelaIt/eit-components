@@ -21,7 +21,7 @@ jobs:
           GIT_EMAIL: ${{ secrets.GIT_EMAIL }}
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       - name: Preparar GIT
-        run: git checkout master
+        run: git checkout master && git reset --hard
       - run: npm run lerna publish --registry https://registry.npmjs.org/:_authToken=${NODE_AUTH_TOKEN}
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
