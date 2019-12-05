@@ -16,6 +16,7 @@
       "noCommitHooks": true,
       "conventionalCommits": true,
       "ignoreChanges": [
+        "*.yml",
         "*.spec.ts",
         "*.md"
       ]
