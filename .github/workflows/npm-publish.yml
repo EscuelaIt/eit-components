@@ -1,0 +1,28 @@
+name: EscuelaIT WebComponents
+
+on:
+  push:
+    branches:
+    - master
+
+jobs:
+  publish-npm:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v1
+      - uses: actions/setup-node@v1
+        with:
+          node-version: 12
+      - run: npm ci
+      - name: Identidad GIT
+        run: git config --global user.name $GIT_USERNAME && git config --global user.email $GIT_EMAIL && git remote set-url origin https://x-access-token:${GITHUB_TOKEN}@github.com/$GITHUB_REPOSITORY
+        env:
+          GIT_USERNAME: ${{ secrets.GIT_USERNAME }}
+          GIT_EMAIL: ${{ secrets.GIT_EMAIL }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      - run: npm run lerna publish --registry https://registry.npmjs.org/:_authToken=${NODE_AUTH_TOKEN}
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
+      - run: npm run lerna publish --registry https://npm.pkg.github.com/:_authToken=${NODE_AUTH_TOKEN}
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
