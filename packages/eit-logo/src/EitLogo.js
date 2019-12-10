@@ -9,7 +9,7 @@ export class EitLogo extends LitElement {
         width: 300px;
       }
       svg .letter {
-        fill: #303030;
+        fill: #333333;
       }
       svg .icon {
         fill: #e74c3c;
