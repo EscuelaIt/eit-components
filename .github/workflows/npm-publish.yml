@@ -6,13 +6,14 @@ on:
     - master
 
 jobs:
-  publish-npm:
+  publish:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v1
       - uses: actions/setup-node@v1
         with:
           node-version: 12
+          scope: escuelait
       - run: npm ci
       - name: Identidad GIT
         run: git config --global user.name $GIT_USERNAME && git config --global user.email $GIT_EMAIL && git remote set-url origin https://x-access-token:${GITHUB_TOKEN}@github.com/$GITHUB_REPOSITORY
@@ -22,9 +23,12 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       - name: Preparar GIT
         run: git checkout master && git reset --hard
-      - run: npm run lerna publish --registry https://registry.npmjs.org/:_authToken=${NODE_AUTH_TOKEN}
-        env:
-          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
-      - run: npm run lerna publish --registry https://npm.pkg.github.com/:_authToken=${NODE_AUTH_TOKEN}
-        env:
-          NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      - name: Autenticacion con GPR
+        run: echo "//npm.pkg.github.com/:_authToken=${{ secrets.GIT_TOKEN }}" > ~/.npmrc
+      - name: Publicar a GitHub
+        run: npm run lerna publish -- --no-verify-access --registry=https://npm.pkg.github.com/
+        continue-on-error: true
+      - name: Autenticacion con NPM
+        run: echo "//registry.npmjs.org/:_authToken=${{ secrets.NPM_TOKEN }}" > ~/.npmrc
+      - name: Publicar a NPM
+        run: npm run lerna publish from-git -- --no-verify-access
