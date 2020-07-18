@@ -685,6 +685,14 @@
     lodash "^4.17.13"
     to-fast-properties "^2.0.0"
 
+"@escuelait/eit-logo@^1.1.2":
+  version "1.1.2"
+  resolved "https://registry.yarnpkg.com/@escuelait/eit-logo/-/eit-logo-1.1.2.tgz#deb64c6237ea645ff4e00cee11f95d7805a4187d"
+  integrity sha512-kIk9NF8+fIpWmJQWEwZtinnZ07ddR2bWimBFcjESe2bScKa8QOnacXoWcCAHJXmfx2Cvadbx2krcZPvBeihLjw==
+  dependencies:
+    lit-element "^2.2.1"
+    lit-html "^1.1.2"
+
 "@open-wc/building-utils@^2.10.5":
   version "2.10.5"
   resolved "https://registry.yarnpkg.com/@open-wc/building-utils/-/building-utils-2.10.5.tgz#ab53218f0462676d5e3809a04662fdd71bc30c02"
@@ -1486,17 +1494,17 @@ koa@^2.7.0:
     type-is "^1.6.16"
     vary "^1.1.2"
 
-lit-element@^2.0.1:
-  version "2.2.1"
-  resolved "https://registry.yarnpkg.com/lit-element/-/lit-element-2.2.1.tgz#79c94d8cfdc2d73b245656e37991bd1e4811d96f"
-  integrity sha512-ipDcgQ1EpW6Va2Z6dWm79jYdimVepO5GL0eYkZrFvdr0OD/1N260Q9DH+K5HXHFrRoC7dOg+ZpED2XE0TgGdXw==
+lit-element@^2.2.1:
+  version "2.3.1"
+  resolved "https://registry.yarnpkg.com/lit-element/-/lit-element-2.3.1.tgz#73343b978fa1e73d60526c6bb6ad60f53a16c343"
+  integrity sha512-tOcUAmeO3BzwiQ7FGWdsshNvC0HVHcTFYw/TLIImmKwXYoV0E7zCBASa8IJ7DiP4cen/Yoj454gS0qqTnIGsFA==
   dependencies:
-    lit-html "^1.0.0"
+    lit-html "^1.1.1"
 
-lit-html@^1.0.0:
-  version "1.1.2"
-  resolved "https://registry.yarnpkg.com/lit-html/-/lit-html-1.1.2.tgz#2e3560a7075210243649c888ad738eaf0daa8374"
-  integrity sha512-FFlUMKHKi+qG1x1iHNZ1hrtc/zHmfYTyrSvs3/wBTvaNtpZjOZGWzU7efGYVpgp6KvWeKF6ql9/KsCq6Z/mEDA==
+lit-html@^1.1.1, lit-html@^1.1.2:
+  version "1.2.1"
+  resolved "https://registry.yarnpkg.com/lit-html/-/lit-html-1.2.1.tgz#1fb933dc1e2ddc095f60b8086277d4fcd9d62cc8"
+  integrity sha512-GSJHHXMGLZDzTRq59IUfL9FCdAlGfqNp/dEa7k7aBaaWD+JKaCjsAk9KYm2V12ItonVaYx2dprN66Zdm1AuBTQ==
 
 lodash.camelcase@^4.3.0:
   version "4.3.0"
@@ -1524,9 +1532,9 @@ lodash.uniq@^4.5.0:
   integrity sha1-0CJTc662Uq3BvILklFM5qEJ1R3M=
 
 lodash@^4.17.13, lodash@^4.17.14:
-  version "4.17.15"
-  resolved "https://registry.yarnpkg.com/lodash/-/lodash-4.17.15.tgz#b447f6670a0455bbfeedd11392eff330ea097548"
-  integrity sha512-8xOcRHvCjnocdS5cpwXQXVzmmh5e5+saE2QGoeQmbKmRS6J3VQppPOIt0MnmE+4xlZoumy0GPG0D0MVIQbNA1A==
+  version "4.17.19"
+  resolved "https://registry.yarnpkg.com/lodash/-/lodash-4.17.19.tgz#e48ddedbe30b3321783c5b4301fbd353bc1e4a4b"
+  integrity sha512-JNvd8XER9GQX0v2qJgsaN/mzFCNA5BRe/j8JN9d+tWyGLSodKQHKFicdwNYzWwI3wjRnaKPsGj1XkBjx/F96DQ==
 
 loose-envify@^1.0.0:
   version "1.4.0"
